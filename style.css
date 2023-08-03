@@ -2,34 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 }
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
+  color: #d6d6d6;
 }
 body header {
+  background-image: url(Images/imgHeaderBackground.jpg);
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
-  background-image: url(Images/imgHeaderBackground.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
 }
 body header .navbar {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+  background-color: black;
+  opacity: 80%;
+  position: fixed;
   width: 100%;
-  box-sizing: border-box;
 }
-body header .navbar a {
-  color: white;
-}
-body header .navbar .navLiens {
+body header .navbar .flexNav {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
-body header .navbar .navLiens ul {
-  display: flex;
+body header .navbar .flexNav .navLinks ul li {
+  list-style: none;
+  margin: 20px 0;
+  border-bottom: 2px solid white;
+  width: 100px;
+}
+body header .navbar .flexNav .navLinks ul li a {
+  color: #d6d6d6;
+  text-decoration: none;
 }
