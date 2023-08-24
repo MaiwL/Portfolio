@@ -16,16 +16,24 @@ body header {
 }
 body header .navbar {
   background-color: black;
-  opacity: 80%;
   position: fixed;
   width: 100%;
 }
 body header .navbar .flexNav {
-  max-width: 1300px;
+  max-width: 2300px;
   margin: 0 auto;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
+}
+body header .navbar .flexNav .navHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .navbar .flexNav .navHead button {
+  background: none;
+  border: none;
 }
 body header .navbar .flexNav .navLinks ul li {
   list-style: none;
