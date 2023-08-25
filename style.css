@@ -32,8 +32,15 @@ body header .navbar .flexNav .navHead {
   align-items: center;
 }
 body header .navbar .flexNav .navHead button {
-  background: none;
   border: none;
+  background: none;
+}
+body header .navbar .flexNav .navLinks {
+  height: 0;
+  overflow: hidden;
+}
+body header .navbar .flexNav .navLinks .nav-open {
+  height: 100vh;
 }
 body header .navbar .flexNav .navLinks ul li {
   list-style: none;
