@@ -3,52 +3,93 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  color: #d6d6d6;
+  background-color: #faf1e4;
 }
-body header {
-  background-image: url(Images/imgHeaderBackground.jpg);
-  background-position: center;
-  background-size: cover;
+
+/* **************HEADER******************* */
+.full-height {
   height: 100vh;
-  width: 100vw;
 }
-body header .navbar {
-  background-color: black;
-  position: fixed;
-  width: 100%;
-}
-body header .navbar .flexNav {
-  max-width: 2300px;
-  margin: 0 auto;
-  padding: 20px 40px;
+
+nav {
+  background-color: #435334;
   display: flex;
-  flex-direction: column;
-}
-body header .navbar .flexNav .navHead {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-body header .navbar .flexNav .navHead button {
+
+nav h2 {
+  padding-left: 20px;
+  color: #9eb384;
+}
+
+nav button {
+  background-color: inherit;
   border: none;
-  background: none;
+  cursor: pointer;
 }
-body header .navbar .flexNav .navLinks {
-  height: 0;
-  overflow: hidden;
+
+nav button img {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
-body header .navbar .flexNav .navLinks .nav-open {
-  height: 100vh;
+
+.buttonNavigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-body header .navbar .flexNav .navLinks ul li {
-  list-style: none;
-  margin: 20px 0;
-  border-bottom: 2px solid white;
-  width: 100px;
+
+.buttonNavigation button {
+  height: 30px;
+  width: 150px;
+  margin: 30px 0 30px 0;
+  border: none;
+  background-color: #9eb384;
 }
-body header .navbar .flexNav .navLinks ul li a {
-  color: #d6d6d6;
+
+.buttonNavigation .buttonAPropos {
+  border-radius: 20px 20px 0 20px;
+}
+
+.buttonNavigation button a {
+  color: #435334;
   text-decoration: none;
 }
+.buttonNavigation .buttonPortfolio{
+  border-radius: 20px 20px 20px 0;
+}
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto;
+}
+.buttonNavigationTwo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.buttonNavigationTwo button {
+  height: 30px;
+  width: 150px;
+  margin: 30px 0 30px 0;
+  border: none;
+  background-color: #9eb384;
+}
+.buttonNavigationTwo .buttonCompetences {
+  border-radius: 20px 0 20px 20px;
+}
+
+.buttonNavigationTwo button a {
+  color: #435334;
+  text-decoration: none;
+}
+.buttonNavigationTwo .buttonContact{
+  border-radius: 0 20px 20px 20px;
+}
+
