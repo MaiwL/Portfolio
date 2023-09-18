@@ -8,7 +8,8 @@ body {
   background-color: #faf1e4;
 }
 
-/* **************HEADER******************* */
+/* **************  HEADER  ******************* */
+
 .full-height {
   height: 100vh;
 }
@@ -23,7 +24,9 @@ h1{
 h1 span{
   font-size: 70px;
 }
-/* ***************NavBarre**************** */
+
+/* ***************  NavBarre  **************** */
+
 nav {
   background-color: #435334;
   display: flex;
@@ -47,7 +50,9 @@ nav button img {
   width: 30px;
   margin: 10px;
 }
-/* ***************Menu Active***************** */
+
+/* ***************  Menu Active  ***************** */
+
 .navbar-menu{
   display: none;
 }
@@ -81,7 +86,8 @@ nav button img {
   right: 20px;
 }
 
-/* ***************Bouton de navigation******** */
+/* **************  Bouton de navigation  ******** */
+
 .buttonNavigation {
   display: flex;
   justify-content: center;
@@ -136,5 +142,56 @@ img{
 }
 .buttonNavigationTwo .buttonContact{
   border-radius: 0 20px 20px 20px;
+}
+
+/* Section A propos */
+
+.sectionAPropos{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sectionAPropos .imgAPropos{
+  margin: 50px;
+  align-self: center;
+}
+.sectionAPropos .buttonAPropos{
+  height: 30px;
+  width: 150px;
+  margin: 40px 0 60px 0;
+  border: none;
+  background-color: #9eb384;
+  border-radius: 20px 20px 0 20px;
+  align-self: center;
+}
+.sectionAPropos .buttonAPropos a{
+  text-decoration: none;
+  color: #435334;
+}
+.sectionAPropos p{
+  text-align: justify;
+  padding: 10px;
+  color: #435334;
+}
+
+/* Section Compétences */
+
+.sectionCompetences{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.sectionCompetences .buttonCompetences{
+  height: 30px;
+  width: 150px;
+  margin: 40px 0 60px 0;
+  border: none;
+  background-color: #9eb384;
+  border-radius: 20px 0 20px 20px;
+  align-self: center;
+}
+.sectionCompetences .buttonCompetences a{
+  text-decoration: none;
+  color: #435334;
 }
 
