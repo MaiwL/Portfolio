@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
         navbarMenu.classList.remove("active");
     });
 
+    // ******************* Day Night Mode ********************
+
+    
+
     // ******************* Typing text ***********************
 
    

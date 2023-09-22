@@ -30,6 +30,10 @@ img{
   display: flex;
   margin: 0 auto;
 }
+/* *********** Day Night Mode */
+
+
+/* *********** Typing Text */
 .typingText{
   text-align: center;
   margin: 60px auto;
@@ -121,10 +125,12 @@ nav button img {
   text-decoration: none;
   font-size: 40px;
 }
-.navbar-menu.active .close-button{
+.navbar-menu.active .close-button .closedButton{
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
 }
 
 /* Section A propos */
