@@ -13,16 +13,37 @@ body {
 .full-height {
   height: 100vh;
 }
-h1{
+p{
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 100px 0 30px 0;
+  margin-top: 100px;
   font-size: 20px;
   color: #435334;
 }
-h1 span{
-  font-size: 70px;
+h1{
+  position: relative;
+  font-size: 60px;
+  letter-spacing: -0.02em;
+  color: #435334;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 64px;
+  width: 20%;
+  color: #9eb384;
+  overflow: hidden;
+  animation: move 5s alternate ease-in-out infinite;
+}
+@keyframes move{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 67%;
+  }
 }
 img{
   height: 210px;
@@ -91,36 +112,18 @@ label img.moon{
 .typingText{
   text-align: center;
   margin: 70px auto;
-  width: 80%;
-  /* Overflow: hidden; cache le texte qui dépasse */
-
+  width: 40%;
+}
+.typingText p{
+  color: #9eb384;
+  font-size: 25px;
 }
 
 .typingText .text{
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 5s steps(30, end), blinking-cursor 0.5s step-end infinite;
   color: #435334;
   font-size: 25px;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 
-@keyframes blinking-cursor {
-  from, to {
-    border-right: 2px solid transparent;
-  }
-  50% {
-    border-right: 2px solid #333;
-  }
-}
 
 
 /* ***************  NavBarre  **************** */
@@ -193,18 +196,14 @@ nav button img {
   display: flex;
   flex-direction: column;
 }
-.sectionAPropos .imgAPropos{
-  align-self: center;
-  width: 100%;
-  height: 180px;
-  background-image: url(./Images/IMG_20230817_140455\ \(2\).jpg);
-  background-size: cover;
- background-position: 10%;
+.sectionAPropos .imageApropos{
+
+
 }
 .sectionAPropos .buttonAPropos{
   height: 30px;
   width: 150px;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 20px 0;
   border: none;
   background-color: #9eb384;
   border-radius: 20px 20px 0 20px;
