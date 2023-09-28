@@ -20,31 +20,13 @@ p{
   color: #435334;
 }
 h1{
-  position: relative;
   font-size: 60px;
-  letter-spacing: -0.02em;
   color: #435334;
   text-align: center;
   margin-bottom: 30px;
 }
-h1::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 64px;
-  width: 20%;
-  color: #9eb384;
-  overflow: hidden;
-  animation: move 5s alternate ease-in-out infinite;
-}
-@keyframes move{
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 67%;
-  }
-}
+
+
 img{
   height: 210px;
   width: 230px;
