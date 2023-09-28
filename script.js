@@ -61,5 +61,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     typeText(texts[textIndex], textIndex);
-
+     
 });
