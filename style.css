@@ -170,6 +170,14 @@ nav button img {
   height: 30px;
   width: 30px;
 }
+/* Partie commune à toutes les sections  */
+
+.colorChange{
+  width: 150px;
+  height: 30px;
+  background-color: #9eb384;
+  transition: background-color 0.3s;
+}
 
 /* Section A propos */
 

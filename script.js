@@ -62,4 +62,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     typeText(texts[textIndex], textIndex);
      
+// Changement de couleur au scroll
+// Sélectionnez toutes les divs avec la classe "color-change-div"
+const colorChangeDivs = document.querySelectorAll('.colorChange');
+
+// Variables pour suivre la position de défilement précédente
+let prevScrollTop = window.scrollY;
+let currentScrollTop = prevScrollTop;
+
+// Fonction pour changer la couleur en fonction de la direction du défilement
+function changeColorOnScroll() {
+  // Récupérez la position de défilement verticale actuelle
+  currentScrollTop = window.scrollY;
+
+  // Déterminez la direction du défilement
+  const scrollDirection = currentScrollTop > prevScrollTop ? 'down' : 'up';
+
+  // Définissez les couleurs en fonction de la direction du défilement
+  const colorUp = '#9eb384'; // Couleur lorsque l'utilisateur fait défiler vers le haut
+  const colorDown = '#cedebd'; // Couleur lorsque l'utilisateur fait défiler vers le bas
+
+  // Parcourez toutes les divs avec la classe "color-change-div"
+  colorChangeDivs.forEach((div) => {
+    // Appliquez la couleur en fonction de la direction
+    div.style.backgroundColor = scrollDirection === 'down' ? colorDown : colorUp;
+  });
+
+  // Mettez à jour la position de défilement précédente
+  prevScrollTop = currentScrollTop;
+}
+
+// Écoutez l'événement de défilement pour déclencher la fonction de changement de couleur
+window.addEventListener('scroll', changeColorOnScroll);
+
+
 });
