@@ -96,4 +96,22 @@ function changeColorOnScroll() {
 window.addEventListener('scroll', changeColorOnScroll);
 
 
+// Sélectionnez toutes les images de la face avant
+const imagesFaceAvant = document.querySelectorAll('.card');
+
+// Ajoutez un gestionnaire d'événements à chaque carte
+imagesFaceAvant.forEach(card => {
+    card.addEventListener('click', function() {
+        retournerCarte(this);
+    });
+});
+
+function retournerCarte(carte) {
+    const faceAvant = carte.querySelector('.face-avant');
+    const faceArriere = carte.querySelector('.face-arriere');
+    faceAvant.style.transform = 'rotateY(180deg)';
+    faceArriere.style.opacity = '0.6';
+}
+
+
 });
