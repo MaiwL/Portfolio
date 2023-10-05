@@ -565,6 +565,24 @@ footer a{
   text-align: end;
   margin-right: 20px;
 }
+ /* Styles pour les tablettes en mode portrait et paysage */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .sectionAPropos{
+    background-color: #cedebd;
+    position: relative;
+  }
+  .buttonAPropos{
+    position: absolute;
+  }
+  .containerApropos{
+    display: flex;
+    align-items: center;
+  }.containerApropos .imageApropos{
+    flex: 6;
+  }
+
+}
+
 
 
 

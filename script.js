@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
    
     const textElement = document.querySelector('.text');
-    const texts = [" front-end !", " back-end !"];
+    const texts = [" front-end !", " back-end !"," Junior !"];
     let textIndex = 0;
 
     function typeText(text, index) {
