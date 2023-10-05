@@ -490,7 +490,62 @@ nav button img {
     transform: translateY(-100%);
   }
 }
+/* Section Contact !  */
 
+.sectionContact{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.sectionContact .buttonContact{
+  height: 30px;
+  width: 150px;
+  margin: 40px 0 60px 0;
+  border: none;
+  background-color: #9eb384;
+  border-radius: 0 20px 20px 20px;
+  align-self: center;
+}
+.sectionContact .buttonContact a{
+  text-decoration: none;
+  color: #435334;
+}
+.containerContact{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.mailContact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #435334;
+  padding: 10px;
+}
+.mailContact a{
+  display: block;
+  width: 100px;
+  height: 35px;
+  background-color: #9eb384;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+.mailContact a img{
+  width: 35px;
+  height: 35px;
+}
+.reseauxContact{
+  display: flex;
+  flex-direction: column;
+ margin: 0 auto;
+ padding: 10px;
+}
+.reseauxContact a img{
+  height: 50px;
+  width: 50px;
+  margin: 25px;
+}
 
 
 
