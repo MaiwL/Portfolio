@@ -513,7 +513,7 @@ nav button img {
 .containerContact{
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .mailContact{
   display: flex;
@@ -545,6 +545,25 @@ nav button img {
   height: 50px;
   width: 50px;
   margin: 25px;
+}
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 55px;
+  background-color: #435334;
+}
+footer p{
+  color: #9eb384;
+  padding-top: 10px;
+}
+footer a{
+  display: block;
+  text-decoration: none;
+  color: #cedebd;
+  text-align: end;
+  margin-right: 20px;
 }
 
 
